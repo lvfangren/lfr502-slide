@@ -5,12 +5,20 @@
 
 - npm
 
-  git clone https://github.com/lvfangren/lfr502-slide.git
-  cd  lfr502-slide
-  npm run release //项目编译,具体见package.json文件
-  npm run example //运行项目测试用例
+  git clone https://github.com/lvfangren/lfr502-slide.git  
+  cd  lfr502-slide  
+  npm run release //项目编译,具体见package.json文件  
+  npm run example //运行项目测试用例  
+
++ 或者在你的个人项目中使用下面命令，加载插件
+
+  npm i lfr502-slide  
+
 
 - CDN http://unpkg.com/lfr502-slide/release/bundle.js
+
+- 下载地址：https://github.com/lvfangren/lfr502-slide/releases
+
 
 ## 参数说明
 调用方式
