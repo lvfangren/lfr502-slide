@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>轮播</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      width: 600px;
+      height: 400px;
+      margin: 50px auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #picwrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 99999px;
+      height: 400px;
+    }
+
+    #picwrap>img {
+      float: left;
+    }
+
+    #controls {
+      position: absolute;
+      bottom: 10px;
+      text-align: center;
+      width: 100%;
+    }
+
+    #controls>span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      margin-left: 5px;
+      cursor: pointer;
+      background-color: #333;
+    }
+
+    #controls>span.on {
+      background-color: #ff4500;
+    }
+
+    #wrap>span {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 30px;
+      line-height: 40px;
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      display: none;
+    }
+
+    #wrap:hover>span {
+      display: block;
+    }
+
+    #wrap>span:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    #prev {
+      left: 20px;
+    }
+
+    #next {
+      right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='wrap'>
+    <div id='picwrap' style="left:0;">
+      <img src='./assert/1.jpg'>
+      <img src='./assert/2.jpg'>
+      <img src='./assert/3.jpg'>
+      <img src='./assert/4.jpg'>
+      <img src='./assert/5.jpg'>
+    </div>
+    <span id='prev'>&lt;</span><span id='next'>&gt;</span>
+    <div id='controls'>
+      <span class='on' data-index='0'></span>
+      <span data-index='1'></span>
+      <span data-index='2'></span>
+      <span data-index='3'></span>
+      <span data-index='4'></span>
+    </div>
+  </div>
+  <script type="text/javascript" src="../release/bundle.js"></script>
+  <script type="text/javascript">
+    const pp = new LfrSlide({
+      picwrap: 'picwrap',
+      prev: 'prev',
+      next: 'next',
+      number: 5
+    })
+  </script>
+</body>
+
+</html>

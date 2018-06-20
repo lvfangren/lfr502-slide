@@ -1,0 +1,31 @@
+{
+  "name": "lfr502-slide",
+  "version": "1.0.1",
+  "description": "简易版\u001b[D\u001b[C原生JS轮播图插件",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "webpack",
+    "example":"http-server -p 8889"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lvfangren/lfr502-slide.git"
+  },
+  "keywords": [
+    "slide"
+  ],
+  "author": "https://github.com/lvfangren/lfr502-slide",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lvfangren/lfr502-slide/issues"
+  },
+  "homepage": "https://github.com/lvfangren/lfr502-slide#readme",
+  "devDependencies": {
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
